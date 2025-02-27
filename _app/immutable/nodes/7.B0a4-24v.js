@@ -1,0 +1,1 @@
+import{t as o,a as s}from"../chunks/Bu4crqxK.js";import"../chunks/D8J0KQuK.js";var v=o('<div class="Servicios svelte-1vjzw1u" id="Servicios"><h1 class="svelte-1vjzw1u">Servicios</h1></div>');function r(e){var i=v();s(e,i)}export{r as component};

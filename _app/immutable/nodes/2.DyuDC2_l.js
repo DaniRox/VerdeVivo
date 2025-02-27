@@ -1,0 +1,1 @@
+import{t,a as e}from"../chunks/Bu4crqxK.js";import"../chunks/D8J0KQuK.js";import{c as p,r as m}from"../chunks/DXL0GOST.js";/* empty css                */import{component as i}from"./4.BAuNEhfb.js";var s=t('<div class="main svelte-12gu28c"><!></div>');function l(a){var o=s(),r=p(o);i(r),m(o),e(a,o)}export{l as component};
