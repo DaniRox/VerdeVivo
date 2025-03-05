@@ -40,7 +40,7 @@
         fotosMini={["/img/img2.jpg", "/img/img2.jpg", "/img/img2.jpg"]}
     />
     <Container> 
-                  
+
         <Card
         titulo="Plantines"
         img="/img/lechugamanteca.jpg"
