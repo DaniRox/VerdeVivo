@@ -1,8 +1,8 @@
 <script>
 // @ts-nocheck
 
-	import CarouselProducto from "./CarouselProducto.svelte";
-    import MiniaturaProducto from "./MiniaturaProducto.svelte";
+	import CarouselProducto from "./carouselProducto.svelte";
+    import MiniaturaProducto from "./miniaturaProducto.svelte";
 
     export let fotoProducto="#";
     export let titulo="titulo";
@@ -56,7 +56,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 18rem;
+        height: 20rem;
     }
     .fotoPrincipal{
         display: none;
@@ -70,12 +70,12 @@
         display: none;
     }
     .foto{
-        width: auto;
-        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         overflow: hidden;
+        height: 100%;
     }
     img{
         height: 100%;
@@ -155,7 +155,7 @@
     }
     @media (min-width: 480px){
         .fotosProducto{
-            height: 22rem;
+            height: 20rem;
         }
     }
 
@@ -221,8 +221,8 @@
     <h1 class="tituloMovil">{titulo}</h1>
     <div class="fotosProducto">
         <div class="miniaturas">
-        
-                {#each fotosMini as foto}
+           
+                 {#each fotosMini as foto}
                     <MiniaturaProducto fotoMiniatura={foto} />
                 {/each}
         </div>
@@ -230,11 +230,9 @@
         <div class="foto"  >
             <img src={fotoProducto} alt="" class="fotoPrincipal">
             <div class="carrouselproducto">
-                
                 <CarouselProducto
-                    imagesProducto= {[img1,img2,img3]}
+                     imagesProducto= {[img1,img2,img3]}
                 />
-
             </div>
         </div>
     </div>

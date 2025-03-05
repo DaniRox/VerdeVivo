@@ -107,7 +107,7 @@
       height: 30rem;
         }
         .flechaicono { 
-      width : 4rem; 
+       width : 4rem; 
         }   
     }
 
@@ -119,7 +119,7 @@
     <div class="image-container" style="transform: translateX({-currentImageIndex * 100}%)"> 
       {#each images as image} 
         <div class="image-wrapper">
-          <img src={image} alt="Carousel" />
+          <img src={image} alt="Carousel Image" />
         </div> 
       {/each}
     </div> 

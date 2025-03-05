@@ -70,7 +70,9 @@
     .dot.active{
       background-color:var(--newGrowph);
     }
-    
+    @media (min-width:480px){
+       
+    }
     
 
   </style>
@@ -81,13 +83,13 @@
     <div class="image-container" bind:this={container} on:scroll={updateCurrentIndex}> 
       {#each imagesProducto as image} 
         <div class="image-wrapper">
-          <img src={image} alt="Carousel" />
+          <img src={image} alt="Carousel Image" />
         </div> 
       {/each}
     </div> 
     <div class="dots">
       {#each imagesProducto as _, index} 
-      <div class="dot {index === currentImageIndex ? 'active' : ''}" >
+      <div class="dot {index === currentImageIndex ? 'active' : ''}" on:click={() => scrollToImage(index)}>
       </div> 
       {/each}
     </div>

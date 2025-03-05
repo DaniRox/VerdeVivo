@@ -1,8 +1,8 @@
 <script>
-	import Baner from '$lib/components/baner.svelte';
+	import Baner from '$lib/components/Baner.svelte';
 	import CardProducto from '$lib/components/CardProducto.svelte';
     import Container from '$lib/components/Container.svelte';
-    import Card from '$lib/components/Card.svelte';
+    import Card from '../../lib/components/Card.svelte';
 </script>
 
 <style>
@@ -40,7 +40,7 @@
         fotosMini={["/img/img2.jpg", "/img/img2.jpg", "/img/img2.jpg"]}
     />
     <Container> 
-        
+                  
         <Card
         titulo="Plantines"
         img="/img/lechugamanteca.jpg"
@@ -80,7 +80,7 @@
     />
 
     <Container> 
-        
+                  
         <Card
         titulo="Plantines"
         img="/img/lechugamanteca.jpg"

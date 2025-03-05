@@ -57,20 +57,10 @@
         font-family: "Dating";
         font-weight: 800;
     }
-
-    .btn-lupa {
-        cursor: pointer;
-        padding: 0 0.5rem;
-    }
-
     .btn-menu {
+        height: 1.5rem;
         cursor: pointer;
     }
-
-    .icon-menu {
-        height: 1.5rem;
-    }
-
     .menu {
         width: 100%;
         display: flex;
@@ -193,7 +183,6 @@
         .btn-menu {
             display: none;
         }
-
         .divcarrito{
         display: none;
         
@@ -231,14 +220,9 @@
         <p class="logo">logo</p>
         <div class="divBuscador">
             <input type="text" class="buscador"> 
-            <button class="btn-lupa">
-                <img src="/img/buscador.svg" alt=""  class="lupa">
-            </button>
+            <img src="/img/buscador.svg" alt=""  class="lupa">
         </div>
-        <button type="button" on:click={toggleMenu} class="btn-menu">
-            <img src="/img/IconoMenu.svg" alt="menu" class="icon-menu" >
-        </button>
-        
+        <img src="/img/IconoMenu.svg" alt="menu" class="btn-menu" on:click={toggleMenu}>
     </div>
 
     <div class="navlinks">
